@@ -23,9 +23,10 @@ audio [batch, 144000] @ 48kHz, 3 seconds
 ## Prerequisites
 
 - **BirdNET ONNX model** — converted by
-  [birdnet-onnx-converter](https://github.com/thakala/birdnet-onnx-converter)
+  [birdnet-onnx-converter](https://github.com/tphakala/birdnet-onnx-converter)
   from the official TFLite model
-- **BSG classifier ONNX model** — the regional classifier head (e.g.
+- **BSG classifier ONNX model** — the regional classifier head from
+  [BSG](https://github.com/luomus/BSG) (e.g.
   `BSG_birds_Finland_v4_4_fp32.onnx`)
 
 ## Setup
@@ -63,3 +64,8 @@ Tested with:
 
 The script validates model structure on load and will fail with clear errors if
 the models don't match expected shapes.
+
+## References
+
+- [BSG](https://github.com/luomus/BSG) — BSG Finnish Birds Model by the Finnish Museum of Natural History (Luomus)
+- [birdnet-onnx-converter](https://github.com/tphakala/birdnet-onnx-converter) — Convert and optimize BirdNET models for ONNX Runtime inference on GPUs, CPUs, and embedded devices
