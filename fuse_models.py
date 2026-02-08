@@ -49,13 +49,13 @@ BIRDNET_HEAD_NODE_NAMES = {
 
 # Weight/bias initializers belonging to the classification head.
 BIRDNET_HEAD_INITIALIZER_NAMES = {
-    "const_fold_opt__1616",                                      # MatMul weights [1024, 6522]
+    "const_fold_opt__1508",                                      # MatMul weights [1024, 6522]
     "model/CLASS_DENSE_LAYER/BiasAdd/ReadVariableOp/resource",   # Bias [6522]
 }
 
 # The tensor connecting BirdNET backbone to BSG classifier —
 # output of the ReduceMean (global average pooling) node.
-EMBEDDING_TENSOR_NAME = "model/GLOBAL_AVG_POOL/Mean_Squeeze__1647:0"
+EMBEDDING_TENSOR_NAME = "model/GLOBAL_AVG_POOL/Mean_reduced_0"
 
 
 def load_and_validate_birdnet(path: str | Path) -> onnx.ModelProto:
