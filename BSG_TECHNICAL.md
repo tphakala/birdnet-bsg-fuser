@@ -3,8 +3,7 @@
 Technical documentation for the BSG (Bird Sounds Global) Finnish Birds classification
 system. Covers the model architecture, inference pipeline, calibration, and species
 distribution model (SDM) algorithms as implemented in the
-[BSG](https://github.com/luomus/BSG) project by the Finnish Museum of Natural
-History (Luomus).
+[BSG](https://github.com/luomus/BSG) project by the University of Jyväskylä.
 
 ## Model Architecture
 
@@ -310,7 +309,7 @@ Produced by `convert_bsg_data.py`:
 
 ## References
 
-- [BSG](https://github.com/luomus/BSG) — BSG Finnish Birds Model (Luomus)
+- [BSG](https://github.com/luomus/BSG) — BSG Finnish Birds Model (University of Jyväskylä)
 - [BirdNET](https://github.com/kahst/BirdNET-Analyzer) — BirdNET v2.4 by Cornell Lab of Ornithology
 - [rust-birdnet-onnx](https://github.com/tphakala/rust-birdnet-onnx) — Rust inference library
 - [birdnet-onnx-converter](https://github.com/tphakala/birdnet-onnx-converter) — BirdNET model conversion tool
