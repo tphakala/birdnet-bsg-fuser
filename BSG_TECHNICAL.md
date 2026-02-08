@@ -278,6 +278,14 @@ The full inference pipeline for a single audio segment:
 | Chunk size | 600 s | 10–1200 s |
 | SDM enabled | false | — |
 
+## Licensing
+
+- **Software:** The tools in this repository (`fuse_models.py`, `convert_bsg_data.py`)
+  are licensed under the **MIT License**.
+- **Models and Data:** The BSG Finnish Birds Model parameters, migration curves,
+  and distribution maps are licensed under **Creative Commons
+  Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**.
+
 ## File Inventory
 
 ### Model Files

@@ -92,7 +92,7 @@ python convert_bsg_data.py \
 | `BSG_calibration.csv` | 7 KB | Intercept + slope per species (CSV with header) |
 | `BSG_migration.csv` | 17 KB | 8 migration parameters per species (CSV with header) |
 | `BSG_distribution_maps.bin` | 25.8 MB | Packed binary: 64-byte header + 263 species x 2 maps x 132x93 float32 |
-| `distribution_maps/` | — | Raw GeoTIFF maps and LICENSE.md |
+| `distribution_maps/` | — | Raw GeoTIFF maps and **CC BY-NC-SA 4.0** license |
 
 ### Distribution maps binary format
 
