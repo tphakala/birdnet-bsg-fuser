@@ -1,6 +1,6 @@
 # BSG Finland Model — Technical Reference
 
-Technical documentation for the BSG (Bird Survey Group) Finnish Birds classification
+Technical documentation for the BSG (Bird Sounds Global) Finnish Birds classification
 system. Covers the model architecture, inference pipeline, calibration, and species
 distribution model (SDM) algorithms as implemented in the
 [BSG](https://github.com/luomus/BSG) project by the Finnish Museum of Natural
