@@ -70,39 +70,29 @@ stored as NumPy arrays and GeoTIFF files. `convert_bsg_data.py` converts them
 to the CSV and packed binary formats used by `BsgPostProcessor` in
 rust-birdnet-onnx.
 
-### Source data
-
-From the [BSG](https://github.com/luomus/BSG) project, directory
-`scripts/Pred_adjustment/`:
-
-| File | Description |
-|------|-------------|
-| `calibration_params.npy` | Per-species Platt scaling parameters (265 x 2) |
-| `migration_params.npy` | Migration curve parameters (265 x 8) |
-| `distribution_maps/*.tif` | Geographic presence maps, 526 GeoTIFFs (263 species x 2 maps) |
-
 ### Usage
 
 ```bash
 # Convert all three data files
 python convert_bsg_data.py \
     --bsg-data /path/to/BSG/scripts/Pred_adjustment \
-    --output-dir ./output
+    --output-dir ./data
 
 # Skip distribution maps if rasterio is not available
 python convert_bsg_data.py \
     --bsg-data /path/to/BSG/scripts/Pred_adjustment \
-    --output-dir ./output \
+    --output-dir ./data \
     --skip-maps
 ```
 
-### Output files
+### Output files (in `data/`)
 
 | File | Size | Description |
 |------|------|-------------|
 | `BSG_calibration.csv` | 7 KB | Intercept + slope per species (CSV with header) |
 | `BSG_migration.csv` | 17 KB | 8 migration parameters per species (CSV with header) |
 | `BSG_distribution_maps.bin` | 25.8 MB | Packed binary: 64-byte header + 263 species x 2 maps x 132x93 float32 |
+| `distribution_maps/` | — | Raw GeoTIFF maps and LICENSE.md |
 
 ### Distribution maps binary format
 

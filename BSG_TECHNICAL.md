@@ -291,23 +291,21 @@ The full inference pipeline for a single audio segment:
 
 ### Prediction Adjustment Data
 
-Source directory: `scripts/Pred_adjustment/`
+Local directory: `data/`
 
 | File | Shape/Count | Description |
 |------|-------------|-------------|
-| `calibration_params.npy` | (265, 2) float64 | Platt scaling intercept + slope |
-| `migration_params.npy` | (265, 8) float64 | Migration curve parameters |
-| `distribution_maps/*.tif` | 526 files (263 × 2) | Geographic and seasonal presence maps |
+| `data/BSG_calibration.csv` | (265, 2) | Platt scaling intercept + slope |
+| `data/BSG_migration.csv` | (265, 8) | Migration curve parameters |
+| `data/distribution_maps/*.tif` | 526 files | Geographic and seasonal presence maps |
 
-### Converted Files (for rust-birdnet-onnx)
+### Converted Binary Maps (for rust-birdnet-onnx)
 
 Produced by `convert_bsg_data.py`:
 
 | File | Size | Description |
 |------|------|-------------|
-| `BSG_calibration.csv` | 7 KB | Intercept + slope per species |
-| `BSG_migration.csv` | 17 KB | 8 migration parameters per species |
-| `BSG_distribution_maps.bin` | 25.8 MB | Packed binary with 64-byte header |
+| `data/BSG_distribution_maps.bin` | 25.8 MB | Packed binary with 64-byte header |
 
 ## References
 
