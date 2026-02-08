@@ -3,7 +3,9 @@
 Technical documentation for the BSG (Bird Sounds Global) Finnish Birds classification
 system. Covers the model architecture, inference pipeline, calibration, and species
 distribution model (SDM) algorithms as implemented in the
-[BSG](https://github.com/luomus/BSG) project by the University of Jyväskylä.
+[BSG](https://github.com/luomus/BSG) project by the University of Jyväskylä,
+developed as part of the **Muuttolintujen kevät** (Spring of Migrating Birds)
+citizen science initiative.
 
 ## Model Architecture
 

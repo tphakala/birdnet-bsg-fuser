@@ -135,6 +135,6 @@ Tested with:
 
 ## References
 
-- [BSG](https://github.com/luomus/BSG) — BSG Finnish Birds Model by the University of Jyväskylä
+- [BSG](https://github.com/luomus/BSG) — BSG Finnish Birds Model by the University of Jyväskylä (part of the **Muuttolintujen kevät** project)
 - [rust-birdnet-onnx](https://github.com/tphakala/rust-birdnet-onnx) — Rust library for BirdNET, Perch, and BSG Finland inference
 - [birdnet-onnx-converter](https://github.com/tphakala/birdnet-onnx-converter) — Convert and optimize BirdNET models for ONNX Runtime
