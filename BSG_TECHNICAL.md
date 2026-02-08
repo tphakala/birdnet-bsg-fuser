@@ -284,7 +284,7 @@ The full inference pipeline for a single audio segment:
   are licensed under the **MIT License**.
 - **Models and Data:** The BSG Finnish Birds Model parameters, migration curves,
   and distribution maps are licensed under the **BSG – Finnish Birds Model
-  License (Version 1.0)**. See `data/distribution_maps/LICENSE.md` for the full
+  License (Version 1.0)**. See `data/distribution_maps/LICENSE` for the full
   text.
 
 ## File Inventory
